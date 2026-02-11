@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sunrise Poetry – a gentle, emotional space to express feelings through words." />
+  <title>Sunrise Poetry</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --glass-bg: rgba(0,0,0,0.45);
+      --accent: #ff4b5c;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter',sans-serif;
+    }
+
+    html,body{
+      height:100%;
+    }
+
+    body{
+      background:#000;
+      color:#fff;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('rise2.jpeg') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      padding-bottom:120px;
+
+    }
+
+    .content{
+      width:100%;
+      max-width:900px;
+      padding:24px;
+      margin-top:60px;
+    }
+
+    /* HEADER */
+    .page-header{
+      position:sticky;
+      top:0;
+      z-index:5;
+      text-align:center;
+      padding:12px 0;
+      backdrop-filter:blur(6px);
+      border-radius:12px;
+    }
+
+    h1{
+      position:sticky;
+      font-size:clamp(2.2rem,6vw,4.8rem);
+      font-weight:500;
+      letter-spacing:1px;
+      text-align: center;
+    }
+
+    .subtitle{
+      position:sticky;  
+      margin-top:6px;
+      font-size:0.95rem;
+      letter-spacing:2px;
+      opacity:0.85;
+      text-align: center;   
+    }
+
+    /* THEME BUTTON */
+    .theme-buttons{
+      position:fixed;
+      top:20px;
+      right:20px;
+      z-index:10;
+    }
+
+    .theme-buttons button{
+      background:transparent;
+      border:1px solid #fff;
+      color:#fff;
+      padding:8px 18px;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s ease;
+      letter-spacing:1px;
+    }
+
+    .theme-buttons button:hover{
+      background:#fff;
+      color:#000;
+    }
+
+    /* POETRY */
+    main{
+      display:flex;
+      justify-content:center;
+    }
+
+    article.poetry-container{
+      margin-top:40px;
+      background:var(--glass-bg);
+      padding:40px;
+      border-radius:16px;
+      line-height:1.8;
+      font-size:1.05rem;
+      animation:fadeUp 0.8s ease;
+    }
+
+    article h2{
+      font-size:2rem;
+      margin-bottom:6px;
+      text-align: center;
+    }
+
+    article h3{
+      margin-bottom:30px;
+      opacity:0.9;
+       text-align: center;
+    }
+
+    /* ACTION BUTTONS */
+    .actions{
+      margin-top:40px;
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+
+    }
+
+    .like-btn,.back-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 26px;
+      font-size:1rem;
+      border-radius:10px;
+      cursor:pointer;
+      background:transparent;
+      transition:0.3s ease;
+      text-decoration:none;
+      text-align: center;
+    }
+
+    .like-btn{
+      border:2px solid var(--accent);
+      color:var(--accent);
+    }
+
+    .like-btn.liked,
+    .like-btn:hover{
+      background:var(--accent);
+      color:#fff;
+    }
+
+    .back-btn{
+      border:1px solid #fff;
+      color:#fff;
+    }
+
+    .back-btn:hover{
+      background:#fff;
+      color:#000;
+    }
+
+    /* FOOTER */
+    footer.socials{
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      padding:14px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      backdrop-filter:blur(6px);
+      background:rgba(0,0,0,0.35);
+      z-index:6;
+    }
+
+    footer.socials a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:20px;
+      opacity:0.85;
+    }
+
+    footer.socials a:hover{
+      opacity:1;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(20px);} 
+      to{opacity:1;transform:translateY(0);} 
+    }
+
+    /* MOBILE */
+    @media(max-width:600px){
+      article.poetry-container{
+        padding:24px;
+        font-size:0.95rem;
+      }
+      footer.socials h3{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="theme-buttons">
+    <button id="themeToggle">Dawn</button>
+  </div>
+
+  <section class="hero">
+    <div class="content">
+
+      <header class="page-header">
+        <h1>Sunrise Poetry</h1>
+        <p class="subtitle">A way of expressing yourself</p>
+      </header>
+
+      <main>
+        <article class="poetry-container">
+          <h2>Chapter 2</h2>
+          <h3>A New Friend 🤝</h3>
+
+          <p>
+            Then he reached class and got shocked,<br>
+            Due to sudden turns of events his mind was blocked.<br><br>
+
+            Hope that he found today was in his classroom,<br>
+            Couldn't even say hi even in the same room.<br><br>
+
+            He was regretting his decision of not saying hi,<br>
+            The next moment she sat next to him and asked why.<br><br>
+          </p>
+
+          <p>
+            It's not that easy to ask,<br>
+            And for me it's an impossible task.<br><br>
+
+            You overthink too much, you silly,<br>
+            We are friends from now on, meet me here daily.<br><br>
+
+            Is it a dream or a beautiful day?<br>
+            He wondered softly along the way.<br><br>
+
+            Maybe his loneliness had found an end,<br>
+            That's how they became each other's first friend.<br>
+          </p>
+
+          <div class="actions">
+            <button class="like-btn" id="likeBtn" aria-label="Like this poem">♡ Like</button>
+            <a href="Sunrise.html" class="back-btn">Back</a>
+          </div>
+
+          <p style="margin-top:40px;opacity:0.8">Thanking you ❤️</p>
+        </article>
+      </main>
+
+    </div>
+  </section>
+
+  <footer class="socials">
+    <h3>Developer_Sky</h3>
+    <div>
+      <a href="https://www.instagram.com/developer_sky">Instagram</a>
+      <a href="https://github.com/Himanshusky">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    const hero = document.querySelector('.hero');
+    const themeToggle = document.getElementById('themeToggle');
+    const likeBtn = document.getElementById('likeBtn');
+
+    let isDawn = false;
+
+    themeToggle.addEventListener('click', () => {
+      hero.style.background = isDawn
+        ? "linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('rise2.jpeg') center/cover no-repeat"
+        : "linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('dawn2.jpeg') center/cover no-repeat";
+
+      themeToggle.textContent = isDawn ? 'Dawn' : 'Rise';
+      isDawn = !isDawn;
+    });
+
+    if(localStorage.getItem('liked') === 'true'){
+      likeBtn.classList.add('liked');
+      likeBtn.textContent = '❤️ Liked';
+    }
+
+    likeBtn.addEventListener('click', () => {
+      likeBtn.classList.toggle('liked');
+      const liked = likeBtn.classList.contains('liked');
+      likeBtn.textContent = liked ? '❤️ Liked' : '♡ Like';
+      localStorage.setItem('liked', liked);
+    });
+  </script>
+
+</body>
+</html>
