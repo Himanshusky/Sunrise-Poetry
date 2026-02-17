@@ -203,6 +203,99 @@
             background: #ff0019;
             color: white;
         }
+        @media (max-width: 768px) {
+
+    .hero {
+        align-items: center;
+        padding: 40px 15px 120px;
+    }
+
+    .content {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+
+    .poetry-container {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .poetry-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .poetry-container h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .back-btn,
+    .like-btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+        margin-top: 20px;
+    }
+
+    .theme-buttons {
+        top: 10px;
+        right: 10px;
+    }
+
+    .theme-buttons button {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+
+    .socials {
+        right: 0;
+        padding: 12px 15px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .socials h3 {
+        position: static;
+        font-size: 0.9rem;
+        margin-right: auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .poetry-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-btn + .like-btn {
+        margin-left: 0;
+    }
+
+    .back-btn,
+    .like-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+.poetry-container p {
+    text-align: left;
+}
+html {
+    scroll-behavior: smooth;
+}
     </style>
 </head>
 
@@ -297,3 +390,4 @@
 </script>
 
 </html>
+
