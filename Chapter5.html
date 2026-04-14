@@ -142,7 +142,20 @@ body{
   background:var(--text);
   color:var(--bg);
 }
+.NextBtn button{
+  padding:10px 20px;
+  border:1px solid var(--text);
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s;
+}
 
+.NextBtn button:hover{
+  background:var(--text);
+  color:var(--bg);
+}
 .liked{
   background:var(--accent) !important;
   color:#fff !important;
@@ -196,7 +209,7 @@ body{
       <p>Then she hit him with another punch,<br>Already told you to think before saying this much,</p>
       <p>In pain - "Got it, you little boxer,<br>Never gonna say again, else I gotcha see doctor,</p>
       <p>Then together they both enjoyed the lunch,<br>That's how their day end with nothing much,</p>
-      <p>While they both are going home,<br>NSaw her dad and he invited them home, </p>
+      <p>While they both are going home,<br>Saw her dad and he invited them home, </p>
       <p>He just don't know how to react,<br>Can't even say no cause it's a fact,</p>
       <p>Then he looked in her eyes, <br>Realized See she wanna go with him and agrees without a why,</p>
       <p>Then they both agreed and reached at her home,<br>Suddenly he started feeling anxious and nervous  like a Storm.</p>
@@ -208,7 +221,7 @@ body{
     <div class="actions">
       <button onclick="history.back()">Back</button>
       <button id="likeBtn">♡ Like</button>
-      <button><a href="CHapter4.html id="likeBtn>Home</a></button>
+      <button><a href="CHapter4.html id="NextBtn>Home</a></button>
     </div>
 
   </div>
@@ -249,7 +262,7 @@ likeBtn.onclick = () => {
 
   likeBtn.textContent = liked ? "❤️ Liked" : "♡ Like";
   localStorage.setItem("liked", liked);
-};
+}
 
 </script>
 
