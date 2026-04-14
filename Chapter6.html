@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Poetry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg: linear-gradient(90deg, #ffb8c2, #fff9db);  
+  --bg-soft:#ffe4e6;   
+  --text:#3b1f24;      
+  --text-dim:#7a4b52;  
+  --accent:#ff4d6d;    
+  --accent-soft:#ff8fa3; 
+}
+
+body.dark{
+  --bg:#1a1a1a;
+  --text:#eee;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter', sans-serif;
+  transition:0.4s;
+}
+
+/* BRAND HEADER */
+.brand-header{
+  text-align:center;
+  padding:30px 20px;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+.brand-title{
+  font-family:'Playfair Display', serif;
+  font-size:3.5rem;
+}
+
+.brand-subtitle{
+  font-size:1rem;
+  letter-spacing:2px;
+  opacity:0.7;
+  margin-top:5px;
+}
+
+/* THEME BUTTON */
+.theme-btn{
+  position:fixed;
+  top:20px;
+  right:20px;
+  padding:12px 18px;
+  border:1px solid var(--text);
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  border-radius:8px;
+}
+
+/* LAYOUT */
+.container{
+  display:flex;
+  min-height:100vh;
+}
+
+/* LEFT */
+.left{
+  flex:1;
+  padding-top:20px;
+  padding-left: 170px;
+  padding-bottom: 120px;
+  overflow-y:auto;
+}
+
+/* RIGHT IMAGE */
+.right{
+  width:40%;
+  position:sticky;
+  top:0;
+  height:100vh;
+}
+
+.right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* TITLE */
+.poetry-title{
+  font-family:'Playfair Display', serif;
+  font-size:4rem;
+}
+
+.poetry-sub{
+  font-family:'Playfair Display', serif;
+  font-style:italic;
+  margin-bottom:30px;
+  font-size: 1.1rem;
+}
+
+/* POEM */
+.poem{
+  max-width:600px;
+  line-height:2.1;
+  font-size:1.05rem;
+}
+
+.poem p{
+  margin-bottom:28px;
+  gap: 2rem;
+}
+
+/* AUTHOR */
+.author{
+  margin-top:40px;
+}
+
+/* ACTION BUTTONS */
+.actions{
+  margin-top:40px;
+  display:flex;
+  gap:15px;
+}
+
+.actions button{
+  padding:10px 20px;
+  border:1px solid var(--text);
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.actions button:hover{
+  background:var(--text);
+  color:var(--bg);
+}
+
+.liked{
+  background:var(--accent) !important;
+  color:#ffffff !important;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+  }
+
+  .right{
+    position:relative;
+    width:100%;
+    height:250px;
+  }
+
+  .left{
+    padding:30px 20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="theme-btn" id="themeToggle">Dawn</button>
+
+<!-- HEADER -->
+<div class="brand-header">
+  <div class="brand-title">Sunrise Poetry</div>
+  <div class="brand-subtitle">A way of expressing yourself</div>
+</div>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+
+    <div class="poetry-title">Home</div>
+    <div class="poetry-sub">Chapter 06</div>
+
+    <div class="poem">
+<p>Now they both reached her home with excitement,<br>He was nervous and froze in that very moment.<br></p>
+<p>Then she comforted him and rang the bell,<br>By looking into his eyes, she knew he was not well.<br></p>
+<p>She held his hand, saying everything will be fine,<br>He forgot to worry and enjoyed the divine.<br></p>
+<p>Then her mother opened the door,<br>Greeted them politely and started smiling more.<br></p>
+<p>“Are you her classmate, am I right?”<br>He felt delighted hearing she spoke about him with pride.<br></p>
+<p>“You both sit here, I am bringing some snacks,”<br>“Let me show you my room once I came back.”<br></p>
+<p>“Don’t move from here, or I’ll kill you with this knife,” <br>Then she left to change her clothes, full of life.<br></p>
+<p>He quietly obeyed her order,<br>Then she came back and offered him water.<br></p>
+<p>With a big smile, he looked at a picture on the wall,<br>A cute little girl with an adorable smile playing with a ball.<br></p>
+<p>“That’s you, I’m pretty sure,” he said with confidence,<br>“How did you know?” she asked with elegance.<br></p>
+<p>“Clearly, because your eyes are still that beautiful,<br>As she smiled he said "it's still so cheerful".”<br></p>
+<p>Then her mother brought the snacks,<br>They enjoyed them, and he said, “I need to go back.”<br></p>
+<p>“At least wait to meet her dad,” her mom said,<br>“I need to go, else my mom will be mad.”<br></p>
+<p>Then his phone rings again, and he started to worry,<br>“Okay, go home safely, no need to hurry.”<br></p>
+<p>“Thanks for everything, I really enjoyed the evening,<br>Next time I’ll meet uncle, that’s a sure thing.”<br></p>
+<p>Then she walked him outside and said,<br>“Now go home, idiot, and call me when you reached.”<br></p>
+    </div>
+
+    <div class="author">— Sunrise Poetry</div>
+
+    <!-- BUTTONS -->
+    <div class="actions">
+      <button onclick="history.back()">Back</button>
+      <button id="likeBtn">♡ Like</button>
+      <button onclick="window.location.href='index.html'">Home</button>
+    </div>
+
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="right">
+    <img id="themeImage" src="rise6.png" alt="">
+  </div>
+
+</div>
+
+<script>
+
+// THEME TOGGLE
+const btn = document.getElementById("themeToggle");
+const img = document.getElementById("themeImage");
+
+btn.onclick = () => {
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+
+  btn.textContent = isDark ? "Rise" : "Dawn";
+  img.src = isDark ? "dawn6.jpg" : "rise6.png";
+};
+
+// LIKE BUTTON
+const likeBtn = document.getElementById("likeBtn");
+
+if(localStorage.getItem("liked") === "true"){
+  likeBtn.classList.add("liked");
+  likeBtn.textContent = "❤️ Liked";
+}
+
+likeBtn.onclick = () => {
+  likeBtn.classList.toggle("liked");
+
+  const liked = likeBtn.classList.contains("liked");
+
+  likeBtn.textContent = liked ? "❤️ Liked" : "♡ Like";
+
+  localStorage.setItem("liked", liked);
+};
+
+</script>
+
+</body>
+</html>
