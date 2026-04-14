@@ -128,7 +128,9 @@ body{
   gap:15px;
 }
 
-.actions button{
+/* Apply same style to BOTH button and anchor */
+.actions button,
+.actions .back-btn{
   padding:10px 20px;
   border:1px solid var(--text);
   background:transparent;
@@ -136,22 +138,16 @@ body{
   cursor:pointer;
   border-radius:8px;
   transition:0.3s;
+  text-decoration:none; /* removes underline from <a> */
+  display:inline-block; /* makes <a> behave like button */
 }
 
-.actions button:hover{
+/* Hover effect same for both */
+.actions button:hover,
+.actions .back-btn:hover{
   background:var(--text);
   color:var(--bg);
-}
-    .back-btn{
-      border:1px solid #fff;
-      color:#fff;
-    }
-
-    .back-btn:hover{
-      background:#fff;
-      color:#000;
-    }
-.liked{
+}.liked{
   background:var(--accent) !important;
   color:#fff !important;
 }
