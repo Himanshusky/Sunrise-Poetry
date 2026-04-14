@@ -78,15 +78,15 @@ body{
   overflow-y:auto;
 }
 
-.right{
-  flex:0 0 35%;
-  height:100vh;
-}
-
-.right img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+/* RIGHT IMAGE */ 
+  .right{ width:35%; 
+         position:sticky;
+         top:0; 
+         height:100vh; } 
+  .right img{ width:100%;
+             height:100%;
+             object-fit:cover; 
+            fit:cover;
 }
 
 /* TITLE */
@@ -209,7 +209,7 @@ body{
     <div class="actions">
       <button onclick="history.back()">Back</button>
       <button id="likeBtn">♡ Like</button>
-      <a href="Chapter6.html" class="back-btn">Next</a
+      <a href="Chapter6.html" class="back-btn">Next</a>
     </div>
 
   </div>
