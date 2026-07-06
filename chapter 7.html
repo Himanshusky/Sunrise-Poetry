@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 07</title>
+</head>
+<style>
+:root{
+ --bg:
+linear-gradient(
+135deg,
+#f4e8dc 0%,
+#f4c195 35%,
+#d5c1b2 100%
+);  
+  --bg-soft:#ffe4e6;   
+  --text:#3b1f24;      
+  --text-dim:#7a4b52;  
+  --accent:#ff4d6d;    
+  --accent-soft:#ff8fa3; 
+}
+
+body.dark{
+  --bg:#2e3140;
+  --text:#eee;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter', sans-serif;
+  transition:0.4s;
+}
+
+/* BRAND HEADER */
+.brand-header{
+  text-align:center;
+  padding:30px 20px;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+.brand-title{
+  font-family:'Playfair Display', serif;
+  font-size:3.5rem;
+}
+
+.brand-subtitle{
+  font-size:1rem;
+  letter-spacing:2px;
+  opacity:0.7;
+  margin-top:5px;
+}
+
+/* THEME BUTTON */
+.theme-btn{
+  position:fixed;
+  top:20px;
+  right:20px;
+  padding:12px 18px;
+  border:1px solid var(--text);
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  border-radius:8px;
+}
+
+/* LAYOUT */
+.container{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+
+/* LEFT */
+.left{
+  flex:1;
+  padding-top:20px;
+  padding-left: 170px;
+  padding-bottom: 120px;
+  overflow-y:auto;
+}
+
+/* RIGHT IMAGE */
+.right{
+width:42%;
+height:100vh;
+position:sticky;
+top:0;
+display:grid;
+justify-content:flex-end;
+align-items:flex-start;
+overflow:hidden;
+}
+
+.right img{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+filter:brightness(.92);
+transition:.4s ease;
+}
+
+/* TITLE */
+.poetry-title{
+  font-family:'Playfair Display', serif;
+  font-size:4rem;
+}
+
+.poetry-sub{
+  font-family:'Playfair Display', serif;
+  font-style:italic;
+  margin-bottom:30px;
+  font-size: 1.1rem;
+}
+
+/* POEM */
+.poem{
+  max-width:600px;
+  line-height:2.1;
+  font-size:1.05rem;
+}
+
+.poem p{
+  margin-bottom:28px;
+  gap: 2rem;
+}
+
+/* AUTHOR */
+.author{
+  margin-top:40px;
+}
+
+/* ACTION BUTTONS */
+.actions{
+  margin-top:40px;
+  display:flex;
+  gap:15px;
+}
+
+.actions button{
+  padding:10px 20px;
+  border:1px solid var(--text);
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.actions button:hover{
+  background:var(--text);
+  color:var(--bg);
+}
+
+.liked{
+  background:var(--accent) !important;
+  color:#ffffff !important;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+  }
+
+  .right{
+    position:relative;
+    width:100%;
+    height:250px;
+  }
+
+  .left{
+    padding:30px 20px;
+  }
+}
+
+</style>
+
+<body>
+    
+<button class="theme-btn" id="themeToggle">Dawn</button>
+
+<!-- HEADER -->
+<div class="brand-header">  
+  <div class="brand-title">Sunrise Poetry</div>
+  <div class="brand-subtitle">A way of expressing yourself</div>
+</div>
+
+<div class="container">
+      <div class="left">
+
+    <div class="poetry-title">Call</div>
+    <div class="poetry-sub">Chapter 07</div>
+
+    <div class="poem">
+    <p>
+After reaching home, the first thing he did was call her,<br>
+“Reached,” he said, and both felt relieved forever.<br><br>
+
+But due to network issues, the call got disconnected,<br>
+She called him again and said, “Out of all, ours was defected.”<br><br>
+
+Sadly, he said, “On our first call, there was a network defect,”<br>
+She smiled calmly and replied, “Some things are imperfectly perfect.”<br><br>
+
+“Imperfectly perfect… that’s what you said,”<br>
+“You know? Something like that already happened.”<br><br>
+
+“Our first introduction,” she completed his words,<br>
+“I asked the name of an idiot, and he froze at that moment—so weird.”<br><br>
+
+“First thing, who asks like that?”<br>
+“Who replies like that, you idiot?”<br><br>
+
+“Who randomly asks, ‘What’s your name?’”<br>
+“And who replies with, ‘Don’t you know my name?’”<br><br>
+
+Then she said, “I was just checking if you remembered your name ”<br>
+Then I replied, “Mine is Nischay… what about you, lame?”<br><br>
+
+“Someone who is never gonna leave,<br>
+My name is Naseeb.”<br><br>
+
+“That was the cheesiest line I’ve ever heard,”<br>
+Both laughed so hard while remembering that moment.
+</p>
+    </div>
+ <div class="author">— Sunrise Poetry</div>
+
+    <!-- BUTTONS -->
+    <div class="actions">
+      <button onclick="history.back()">Back</button>
+      <button id="likeBtn">♡ Like</button>
+      <button onclick="window.location.href='index.html'">Home</button>
+    </div>
+
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="right">
+    <img id="themeImage" src="rise7.jpg" alt="">
+  </div>
+
+</div>
+
+<script>
+
+// THEME TOGGLE
+const btn = document.getElementById("themeToggle");
+const img = document.getElementById("themeImage");
+
+btn.onclick = () => {
+  document.body.classList.toggle("dark");
+
+  const isDark = document.body.classList.contains("dark");
+
+  btn.textContent = isDark ? "Rise" : "Dawn";
+  img.src = isDark ? "down7.jpg" : "rise7.jpg   ";
+};
+
+// LIKE BUTTON
+const likeBtn = document.getElementById("likeBtn");
+
+if(localStorage.getItem("liked") === "true"){
+  likeBtn.classList.add("liked");
+  likeBtn.textContent = "❤️ Liked";
+}
+
+likeBtn.onclick = () => {
+  likeBtn.classList.toggle("liked");
+
+  const liked = likeBtn.classList.contains("liked");
+
+  likeBtn.textContent = liked ? "❤️ Liked" : "♡ Like";
+
+  localStorage.setItem("liked", liked);
+};
+
+</script>
+
+</body>
+</html>
